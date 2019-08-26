@@ -1,0 +1,124 @@
+html, body, .game{
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: #353833;
+  color: white;
+  text-align: center;
+}
+.game{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.stats {
+  margin: 0px;
+  padding: 0px;
+}
+.stats p, .stats button{
+  color: white;
+  margin: 0;
+  display: inline-block;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+}
+.stats p {
+  padding-left: 20px;
+}
+.stats button:focus, .disabler button{
+  outline-width: 0;
+}
+.stats button:first-of-type{
+  width: 100px;
+}
+.stats button:hover, .disabler div button:hover{
+  color: #949e06;
+}
+.stats button:last-of-type{
+  width: 25px;
+}
+.disabler{
+  text-align: center;
+  padding-top: 25px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.9;
+  background-color: white;
+}
+.disabler div{
+  padding: 15px;
+  width: 275px;
+  background-color: black;
+  display: inline-block;
+}
+.disabler div p{
+  font-family: cursive;
+}
+.disabler div .header{
+  font-family: serif;
+  font-size: 25px;
+  color: #949e06;
+}
+.disabler div .header2{
+  color: #338433;
+}
+.disabler div p:last-of-type{
+  color: #949e06;
+  font-family: serif;
+  font-style: italic;
+  font-size: 18px;
+}
+.disabler div button{
+  opacity: 0.9;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  border: none;
+}
+@media (max-width: 350px) {
+  .stats {
+    font-size: 80%;
+    padding-left: 10px;
+  }
+  .stats button{
+    font-size: 90%;
+  }
+  .stats button, .stats p{
+    float: left;
+    padding-left: 2px;
+  }
+  .stats p:first-of-type {
+    padding-left: 0;
+  }
+  .stats p:last-of-type {
+    padding-left: 16px;
+  }
+  .stats button:last-of-type{
+    margin-right: 5px;
+  }
+  .stats button:first-of-type{
+    width: 81px;
+  }
+  .disabler{
+    margin: 0;
+    padding: 0;
+  }
+  .disabler div{
+    width: 90%;
+    height: 100%;
+    font-size: 95%;
+    padding-top: 0;
+  }
+  .disabler div .header{
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  
+}

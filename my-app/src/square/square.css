@@ -1,0 +1,20 @@
+.square {
+    display: inline-block;
+    min-width: 9%;
+    height: 100%;
+    margin-left: 1px;
+    padding: 0px;
+    background-color: white;
+    background-size:100% 100%;
+    background-repeat: no-repeat;
+  }
+  .square:hover {
+    background-color: rgb(242, 242, 242);
+  }
+
+
+  @media (max-width: 500px) {
+    .square {
+      min-width: 9.37%;
+    }
+  }
